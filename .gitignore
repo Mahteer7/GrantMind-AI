@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# Environment configurations (Credentials - VERY IMPORTANT)
+.env
+
+# Local Databases
+chroma_db/
+
+# Streamlit temporary/runtime files
+.streamlit/
+*logs/
+*.log
