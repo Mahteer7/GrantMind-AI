@@ -1,13 +1,13 @@
-# GrantMind AI 🧠
+# GrantMind AI 
 
 An intelligent document analysis assistant specifically designed for NGOs, humanitarian organizations, and research bodies to analyze grant proposals, funding reports, and policy documents using locally embedded Retrieval-Augmented Generation (RAG) and Anthropic's Claude AI.
 
-## 🌟 Why GrantMind AI Matters
+## Why GrantMind AI Matters
 NGOs and humanitarian organizations handle vast volumes of donor reports, grant applications, field assessments, and policy guidelines. Sifting through hundreds of pages to find specific budgets, targets, beneficiary counts, or geographic regions is time-consuming. 
 
 **GrantMind AI** enables organizations to upload a corpus of documents and interact with them in real-time, receiving accurate, fully-cited answers, comprehensive document summaries, and multi-document comparisons.
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Web UI**: [Streamlit](https://streamlit.io/) (A beautiful, reactive Python web UI)
 - **PDF Extraction**: [pdfplumber](https://github.com/jsvine/pdfplumber) (High-fidelity text extraction per page)
 - **Local Embeddings**: [sentence-transformers](https://www.sbert.net/) (Generating dense vector embeddings locally using the free, fast `all-MiniLM-L6-v2` model)
@@ -17,7 +17,7 @@ NGOs and humanitarian organizations handle vast volumes of donor reports, grant 
 
 ---
 
-## 📁 File Structure
+## File Structure
 ```
 grantmind/
 ├── app.py                  # Streamlit application UI & frontend logic
@@ -34,7 +34,7 @@ grantmind/
 
 ---
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 ### 1. Prerequisites
 Ensure you have **Python 3.8 to 3.11** installed on your machine.
@@ -60,7 +60,7 @@ This will automatically spin up the browser-based UI in your default browser (us
 
 ---
 
-## 🔍 How It Works (RAG Pipeline)
+## How It Works (RAG Pipeline)
 1. **Document Upload**: You upload one or multiple PDF documents in the sidebar.
 2. **Text Extraction & Cleaning**: `pdfplumber` extracts text from each page, cleans formatting, and removes consecutive spaces.
 3. **Overlapping Chunking**: The text is split into chunks of ~500 words with a 50-word overlap to ensure boundaries don't split crucial contextual lines.
